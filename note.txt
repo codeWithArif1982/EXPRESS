@@ -1,0 +1,3 @@
+This is a server side web frame for node
+To develop Server side Rest API
+to develop a complete application with template engine such as PUG 
