@@ -1,3 +1,9 @@
-This is a server side web frame for node
-To develop Server side Rest API
-to develop a complete application with template engine such as PUG 
+# This is a server side web frame for node
+# To develop Server side Rest API
+# To develop a complete application with template engine such as PUG 
+
+
+# Response Body
+# Response Header
+# Response Status
+# Response Cookies
