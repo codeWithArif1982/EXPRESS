@@ -7,3 +7,13 @@
 # Response Header
 # Response Status
 # Response Cookies
+
+
+# Simple Get/Post Request => String Response
+# Simple Get/Post Request => Response Status Code
+# Simple Get/Post Request => JSON Response
+# Simple Get/Post Request => Downloaded Response
+# Simple Get/Post Request => Response Redirect
+# Simple Get/Post Request => Response Header
+# Simple Get/Post Request => Set Response Cookie
+# Simple Get/Post Request => Clear Response Cookie
