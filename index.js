@@ -8,4 +8,4 @@ app.get("/", function(req,res){
 
 app.listen(8000, function(){
     console.log("Server run Success");
-})
+})as
