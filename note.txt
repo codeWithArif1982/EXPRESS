@@ -3,6 +3,33 @@
 # To develop a complete application with template engine such as PUG 
 
 
+
+
+# Request Method
+    The request method indicates the method to be performed on the resource identified by the given Request-URI. The method is case-sensitive and should always be mentioned in uppercase. The following table lists all the supported methods in HTTP/1.1.
+        * GET
+            The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+        * HEAD    
+            Same as GET, but it transfers the status line and the header section only.
+        * POST
+            A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+        * PUT
+            Replaces all the current representations of the target resource with the uploaded content.
+        * DELETE
+            Removes all the current representations of the target resource given by URI.
+        * CONNECT
+            Establishes a tunnel to the server identified by a given URI.
+        * OPTIONS
+            Describe the communication options for the target resource.
+        * TRACE
+            Performs a message loop back test along with the path to the target resource.
+
+
+
+
+
+
+
 # Response Body
 # Response Header
 # Response Status
