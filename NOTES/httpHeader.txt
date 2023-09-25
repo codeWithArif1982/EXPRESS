@@ -1,6 +1,4 @@
-
-
-# HTTP - Header Fields
+ # HTTP - Header Fields
     * General-header
         These header fields have general applicability for both request and response messages.
             Cache-Control : cache-request-directive|cache-response-directive
@@ -38,7 +36,17 @@
                         Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.
                     s-maxage = seconds
                         The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache.
-
+        Connection
+            The Connection general-header field allows the sender to specify options that are desired for that particular connection and must not be communicated by proxies over further connections.
+                Connection: close
+                    The connection will be closed after completion
+                Connection: keep-alive
+                    By default, HTTP 1.1 uses persistent connections, where the connection does not automatically close after a transaction. HTTP 1.0, on the other hand, does not have persistent connections by default. If a 1.0 client wishes to use persistent connections, 
+        Date    
+            All HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without exception. HTTP applications are allowed to use any of the following three representations of date/time stamps
+                Sun, 06 Nov 1994 08:49:37 GMT  ; RFC 822, updated by RFC 1123
+                Sunday, 06-Nov-94 08:49:37 GMT ; RFC 850, obsoleted by RFC 1036
+                Sun Nov  6 08:49:37 1994       ; ANSI C's asctime() format
     * Client Request-header 
         These header fields have applicability only for request messages.
     * Server Response-header
