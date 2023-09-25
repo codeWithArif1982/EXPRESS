@@ -5,7 +5,7 @@ app= express();
 
 
 app.get("/five", function(req,res){
-   res.download("./uploads/Ayat Birthday.jpeg"); 
+   res.download("../uploads/Ayat Birthday.jpeg"); 
    
 });
 
