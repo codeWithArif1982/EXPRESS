@@ -26,56 +26,6 @@
 
 
 
-
-# HTTP - Header Fields
-    * General-header
-        These header fields have general applicability for both request and response messages.
-            Cache-Control : cache-request-directive|cache-response-directive
-                cache-request-directive
-                    Cache-control: no-cache
-                        A cache must not use the response to satisfy a subsequent request without successful revalidation with the origin server.
-                    Cache-control: no-store
-                        The cache should not store anything about the client request or server response.
-                    Cache-control: max-age = seconds
-                        Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.
-                    Cache-control: max-stale [ = seconds ]
-                        Indicates that the client is willing to accept a response that has exceeded its expiration time. If seconds are given, it must not be expired by more than that time.
-                    Cache-control: min-fresh = seconds
-                        Indicates that the client is willing to accept a response whose freshness lifetime is not less than its current age plus the specified time in seconds.
-                    Cache-control: no-transform 
-                        Does not convert the entity-body.
-                    Cache-control: only-if-cached
-                        Does not retrieve new data. The cache can send a document only if it is in the cache, and should not contact the origin-server to see if a newer copy exists.
-                cache-response-directive
-                    public
-                        Indicates that the response may be cached by any cache.
-                    private
-                        Indicates that all or part of the response message is intended for a single user and must not be cached by a shared cache.
-                    no-cache
-                        A cache must not use the response to satisfy a subsequent request without successful re-validation with the origin server.
-                    no-store
-                        The cache should not store anything about the client request or server response.
-                    no-transform
-                        Does not convert the entity-body.
-                    must-revalidate
-                        The cache must verify the status of the stale documents before using it and expired ones should not be used.
-                    proxy-revalidate
-                        The proxy-revalidate directive has the same meaning as the must- revalidate directive, except that it does not apply to non-shared user agent caches.
-                    max-age = seconds
-                        Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.
-                    s-maxage = seconds
-                        The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache.
-
-    * Client Request-header 
-        These header fields have applicability only for request messages.
-    * Server Response-header
-        These header fields have applicability only for response messages.
-    * Entity-header
-        These header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.
-
-
-
-
 # Response Body
 # Response Header
 # Response Status
